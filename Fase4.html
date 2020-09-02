@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 1 Javascript - Fase4</title>
+  </head>
+  <body>
+    Introdueix el teu nom <input type="text" id="nom" /><br>
+    Introdueix el primer cognom <input type="text" id="cognom1" /><br>
+    Introdueix el segon cognom <input type="text" id="cognom2" /><br>
+    Introdueix el dia de naixement <input type="text" id="dia" /><br>
+    Introdueix el mes de naixement <input type="text" id="mes" /><br>
+    Introdueix l'any de naixement <input type="text" id="any" /><br>
+
+    <input type="button" onclick="Any_Traspas()" value="Calcular"/>
+    <script>
+      function Any_Traspas(){
+        let nom = document.getElementById("nom").value;
+        let cognom1 = document.getElementById("cognom1").value;
+        let cognom2 = document.getElementById("cognom2").value;
+        let dia = document.getElementById("dia").value;
+        let mes = document.getElementById("mes").value;
+        let any = document.getElementById("any").value;
+        let nom_complert = nom + " " + cognom1 + " " + cognom2;
+        let data_naixement = dia + " / " + mes + " / " + any;
+        console.log(nom_complert);
+        console.log(data_naixement);
+        if (any % 4) {
+            console.log("L'any " + any + " és un any de traspàs.")
+        } else {
+            console.log("L'any " + any + " no és un any de traspàs.")
+        }
+      }
+        </script>
+  </body>
+</html>

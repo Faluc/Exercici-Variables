@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 1 Javascript - Fase2</title>
+  </head>
+  <body>
+    <p id="traspas"></p>
+    <script>
+      const TRASPAS = 1948;
+      let any_traspas = TRASPAS + 4;
+      let any_naixement = 1982;
+      let num_anys_traspas;
+      num_anys_traspas = (any_naixement - TRASPAS)/4
+      num_anys_traspas = num_anys_traspas.toFixed(0);
+      document.getElementById("traspas").innerHTML = "Entre l'any " + TRASPAS + " i el " + any_naixement + " hi ha " + num_anys_traspas + " anys de traspàs."
+    </script>
+  </body>
+</html>

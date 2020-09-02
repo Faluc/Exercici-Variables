@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 1 Javascript - Fase3</title>
+  </head>
+  <body>
+    Introdueix l'any de naixement <input type="text" id="any" /><br>
+    <input type="button" onclick="Any_Traspas()" value="Calcular"/>
+    <script>
+      function Any_Traspas(){
+      const TRASPAS = "1948";
+      let any_naixement = document.getElementById("any").value;
+      let es_traspas = false;
+      if (any_naixement % 4) {
+          es_traspas = true;
+          console.log("L'any " + any_naixement + " és un any de traspàs.")
+      } else {
+          es_traspas = false;
+          console.log("L'any " + any_naixement + " no és un any de traspàs.")
+      }
+      }
+        </script>
+  </body>
+</html>
